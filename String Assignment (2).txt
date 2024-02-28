@@ -1,0 +1,35 @@
+Q1 - What is mutable string in java ?  Give an exmaple .
+
+AnS -  
+In Java, there is no built-in mutable string class similar to String. However, the StringBuilder and StringBuffer classes provide mutable string-like objects. These classes allow you to modify the content of the string they hold without creating new string objects. 
+
+Example -
+
+public class MutableStringExample {
+    public static void main(String[] args) {
+        StringBuilder mutableStr = new StringBuilder("Hello"); // Mutable string "Hello"
+        
+       
+        mutableStr.append(" World!"); // mutableStr now contains "Hello World!"
+        
+
+        mutableStr.setCharAt(6, ','); // Change ' ' to ','
+        
+        System.out.println("Modified mutable string: " + mutableStr); // Output: Modified mutable string: Hello, World!
+    }
+}
+
+
+Q2 - WAP to  reverse a String
+  Input  : “PWSKILLS”
+ Output   : “SLLIKSPW”
+
+ANS - File is attached below (stringprog1.java)
+
+
+Q3 - WAP to reverse a sentance while preventing the position 
+
+	Input : Think Twice
+	Output : kniht eciwt 
+
+ANS - File is attached  below  (ReverseNumber.java)
